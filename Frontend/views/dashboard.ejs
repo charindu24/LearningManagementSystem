@@ -1,0 +1,77 @@
+<%- include("partials/header.ejs") %>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 text-center mb-4">
+          <h1 class="display-4 text-white">Dashboard</h1>
+        </div>
+      </div>
+      
+      <!-- Notifications Section -->
+      <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+          <div class="card shadow-sm rounded-3">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Notifications</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">New assignment available for Course Name 1</li>
+                <li class="list-group-item">Group study session scheduled for Course Name 2</li>
+                <li class="list-group-item">New material uploaded for Course Name 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Upcoming Events Section -->
+      <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+          <div class="card shadow-sm rounded-3">
+            <div class="card-body">
+              <h5 class="card-title text-success">Upcoming Events</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Exam for Course Name 1 on 20th July</li>
+                <li class="list-group-item">Project submission deadline for Course Name 2 on 25th July</li>
+                <li class="list-group-item">Seminar for Course Name 3 on 30th July</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Recent Activity Section -->
+      <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+          <div class="card shadow-sm rounded-3">
+            <div class="card-body">
+              <h5 class="card-title text-info">Recent Activity</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">You completed an assignment for Course Name 1</li>
+                <li class="list-group-item">You joined a study group for Course Name 2</li>
+                <li class="list-group-item">You uploaded new notes for Course Name 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Links to Other Sections -->
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card shadow-sm rounded-3">
+            <div class="card-body text-center">
+              <h5 class="card-title">My Courses</h5>
+              <p class="card-text">View and manage your courses.</p>
+              <a href="/mycourse" class="btn btn-outline-primary">Go to My Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient background style */
+.gradient-background {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  width: 100%; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Move background behind other content */
+}
+
+/* Centering the form */
+.form-signin {
+  max-width: 400px; /* Set a maximum width for the form */
+  width: 100%; /* Full width of viewport */
+  padding: 1rem; /* Add padding inside the form */
+  background-color: #ffffff; /* White background for the form */
+  border: 1px solid #dee2e6; /* Gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Form title styles */
+.form-signin h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #495057; /* Dark gray text color */
+}
+
+/* Input field styles */
+.form-signin .form-floating {
+  margin-bottom: 1rem;
+}
+
+.form-signin .form-floating input {
+  width: 100%; /* Full width for the input */
+  padding: 0.75rem; /* Padding inside the input */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Label styles */
+.form-signin .form-floating label {
+  color: #6c757d; /* Medium gray label color */
+}
+
+/* Checkbox styles */
+.form-signin .form-check-input {
+  margin-top: 0.3rem; /* Adjust checkbox position */
+}
+
+/* Button styles */
+.form-signin button {
+  margin-top: 1rem; /* Margin above the button */
+  padding: 0.75rem 1.5rem; /* Padding inside the button */
+  font-size: 1rem; /* Font size */
+}
+
+/* Footer styles */
+.form-signin p {
+  margin-top: 2rem; /* Margin above the footer */
+  font-size: 0.875rem;
+  color: #6c757d; /* Medium gray text color */
+  text-align: center; /* Center align the text */
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  background: url('/images/cover.jpg') no-repeat center center/cover;
+  height: 110vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.hero-content .btn-primary {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar header styles */
+.navbarheader {
+  font-family: 'Lato', sans-serif;
+  color: grey;
+  font-size: 100px;
+  margin: 0px;
+}

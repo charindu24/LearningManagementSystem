@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap JS from CDN (needed for toggling) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Your custom CSS files -->
+  <link rel="stylesheet" href="/4.5 LearningManagementSystem/Frontend/public/styles/layout.css">
+  <link rel="stylesheet" href="/4.5 LearningManagementSystem/Frontend/public/styles/content.css">
+  
+  <!-- Theme-specific CSS -->
+  <link rel="stylesheet" href="/4.5 LearningManagementSystem/Frontend/public/styles/theme.css">
+  
+  <!-- jQuery for Bootstrap (needed for toggling) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- Title -->
+  <title>Kingson University</title>
+  
+  <!-- Theme Toggle JavaScript -->
+  <script src="/4.5 LearningManagementSystem/Frontend/public/scripts/theme-toggle.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbarheader">
+    <div class="container-fluid">
+      <!-- Brand Name -->
+      <a class="navbar-brand" href="#">Kingson University</a>
+      
+      <!-- Toggler Button for Navigation Links -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Collapsible Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          
+          <!-- My Course Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="/mycourse">My course</a>
+          </li>
+          
+          <!-- Dashboard Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+          
+          <!-- More Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+          <!-- Help Link (Disabled) -->
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Help</a>
+          </li>
+        </ul>
+        
+        <!-- Username and Logout Button -->
+        <div class="d-flex">
+          <span class="navbar-text me-3">
+            Welcome, <strong>Username</strong>
+          </span>
+          <button type="button" class="btn btn-primary">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
